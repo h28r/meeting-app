@@ -43,9 +43,10 @@ export const Employees = () => {
                             <td>{name}</td>
                             <td>{designation}</td>
                             <td>{department}</td>
+                            <td>{reporting_manager_email}</td>
                             <td>{created_at}</td>
                             <td>{created_by}</td>
-                            <td>{reporting_manager_email}</td>
+                            
                           </tr>
                            )
                        })}

@@ -1,8 +1,6 @@
-//const employees = require('./employee.json')
-
 const db = require("../models");
 
-const { Employees } = db;
+const { Employees , Meetings , Feedbacks ,ActionItems  } = db;
 
 const getEmployeesList = async(req,res) =>{
     const employees = await Employees.findAll({  
@@ -10,4 +8,18 @@ const getEmployeesList = async(req,res) =>{
     return res.json({success:true, employees})
 }
 
-module.exports = { getEmployeesList}
+const getMeetingsList = async(req,res) =>{
+    const meetings = await Meetings.findAll({});
+    return res.json(meetings)
+}
+
+const getFeedbacksList = async (req,res) =>{
+    const feedbacks = await Feedbacks.findAll({});
+    return res.json({success:true,feedbacks})
+}
+
+const getActionItemsList = async (req,res) =>{
+    const actionItems = await ActionItems.findAll({});
+    return res.json({success:true,actionItems})
+}
+module.exports = { getEmployeesList ,getMeetingsList ,getFeedbacksList , getActionItemsList}

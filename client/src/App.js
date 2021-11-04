@@ -1,5 +1,3 @@
-import './App.css';
-
 import { Container } from 'react-bootstrap';
 
 import { Employees } from './components/Employees';
