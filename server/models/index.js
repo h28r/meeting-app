@@ -9,9 +9,9 @@ const db = {};
 
 db.Sequelize = Sequelize;
 
-db.Employees = require("./Employees.js")(sequelize, Sequelize);
-db.Meetings = require('./Meetings.js')(sequelize,Sequelize);
-db.Feedbacks = require('./Feedbacks')(sequelize,Sequelize);
-db.ActionItems = require('./ActionItems')(sequelize,Sequelize);
+db.Employees = require("./Employee.js")(sequelize, Sequelize);
+db.Meetings = require('./Meeting.js')(sequelize,Sequelize);
+db.Feedbacks = require('./Feedback')(sequelize,Sequelize);
+db.ActionItems = require('./ActionItem')(sequelize,Sequelize);
 
 module.exports = db;

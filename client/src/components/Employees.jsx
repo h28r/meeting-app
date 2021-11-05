@@ -35,17 +35,17 @@ export const Employees = () => {
                     </thead>
                     <tbody>
                        {employees.map( employee => {
-                           const {tnl_id, name, email_id,designation,department,created_at,created_by,reporting_manager_email} =employee;
+                           const {tnlId, name, emailId,designation,department,createdAt,createdBy,reportingManagerEmail} =employee;
                            return(
-                            <tr key={tnl_id}>
-                            <td>{tnl_id}</td>
-                            <td>{email_id}</td>
+                            <tr key={tnlId}>
+                            <td>{tnlId}</td>
+                            <td>{emailId}</td>
                             <td>{name}</td>
                             <td>{designation}</td>
                             <td>{department}</td>
-                            <td>{reporting_manager_email}</td>
-                            <td>{created_at}</td>
-                            <td>{created_by}</td>
+                            <td>{reportingManagerEmail}</td>
+                            <td>{createdAt}</td>
+                            <td>{createdBy}</td>
                             
                           </tr>
                            )

@@ -1,29 +1,23 @@
 module.exports = (Sequelize, DataTypes) => {
-    const Feedbacks = Sequelize.define('feedbacks',{
+    const Feedback = Sequelize.define('feedbacks',{
         feedbackId:{
             type : DataTypes.STRING,
             primaryKey:true,
-            field : 'feedback_id',
         },
         emailId:{
             type : DataTypes.STRING,
-            field : 'email_id'
         },
         feeback:{
             type : DataTypes.STRING,
         },
         createdAt:{
             type : DataTypes.TIME,
-            field: 'created_at',
-
         },
         createdBy:{
             type : DataTypes.STRING,
-            field : 'created_by'
         },
         meetingId:{
             type: DataTypes.STRING,
-            field : 'meeting_id'
         }
     },
     {
@@ -34,5 +28,5 @@ module.exports = (Sequelize, DataTypes) => {
         tableName :'feedbacks',
     })
     
-    return Feedbacks;
+    return Feedback;
     };
