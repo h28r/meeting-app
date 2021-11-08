@@ -8,8 +8,9 @@ function App() {
     
    <>
       <NavBar/>
+      <Container>
      <Router/>
-    
+     </Container>
     </>
   );
 }

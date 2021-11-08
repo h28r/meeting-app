@@ -14,7 +14,6 @@ export const Employees = () => {
     const fetchEmployees = async() =>{
     try{
         const response = await axios(`http://localhost:4000/api/app/list`);
-        console.log(response.data.employees);
         setEmployees(response.data.employees);
       }catch(e){
       }

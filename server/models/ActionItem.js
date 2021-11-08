@@ -5,27 +5,27 @@ module.exports = (Sequelize, DataTypes) => {
             primaryKey: true,
             required:true,	
         },
-        email_id:{
+        emailId:{
             type : DataTypes.STRING,
             required :true,	
             isEmail : true,
         },
-        action_item:{
+        actionItem:{
             type : DataTypes.STRING,
             required : true,
         },
-        created_at:{
+        createdAt:{
             type : DataTypes.TIME,
 
         },
-        created_by:{
+        createdBy:{
             type : DataTypes.STRING,
         },
-        meeting_id:{
+        meetingId:{
             type : DataTypes.STRING,
             required :true,
         },
-        feedback_id:{
+        feedbackId:{
             type : DataTypes.STRING,
             required: true,
         },
