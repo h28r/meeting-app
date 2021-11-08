@@ -8,6 +8,7 @@ return (
     <Container>
     <Navbar.Brand href="1 TO 1">One To One</Navbar.Brand>
     <Nav className="me-auto">
+    <Nav.Link href="#home">Employees</Nav.Link>
       <Nav.Link href="#home">Meeting</Nav.Link>
       <Nav.Link href="#features">feedback</Nav.Link>
       <Nav.Link href="#pricing">Action item</Nav.Link>

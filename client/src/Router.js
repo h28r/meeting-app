@@ -1,16 +1,19 @@
-import ActionItems from "./Pages/ActionItems"
-import { Employees } from "./Pages/Employees"
-import { Feedback } from "./Pages/Feedback"
 
+
+import { Employees } from "./Pages/Employees"
+import Meetings from "./Pages/Meetings"
 
 
 const Router = ()=>{
     return (
         <>
+        <Router>
+
         <Employees/>
-        <ActionItems/>
-        <Feedback/>
-      </>
+        <Meetings/>
+       
+        </Router>
+        </>
     )
 }
 export default Router
