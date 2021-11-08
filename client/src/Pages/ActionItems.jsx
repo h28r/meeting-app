@@ -9,4 +9,5 @@ function ActionItems() {
 
         </tbody>
     </Table>)
+}
 export default ActionItems
