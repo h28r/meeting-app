@@ -19,7 +19,7 @@ function ActionItems() {
     }
     return (
     <Container>
-    <Table>
+    <Table striped bordered hover>
         <thead>
         <th>Action Item</th>
         <th>Email</th>
