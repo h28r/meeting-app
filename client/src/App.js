@@ -1,13 +1,15 @@
 import { Container } from 'react-bootstrap';
 
-import { Employees } from './components/Employees';
+import NavBar from './components/NavBar.js';
+import Router from './Router.js';
 
 function App() {
   return (
-    <>
-    <Container className="mt-5 ">
-      <Employees/>
-    </Container>
+    
+   <>
+      <NavBar/>
+     <Router/>
+    
     </>
   );
 }

@@ -20,7 +20,9 @@ export const Employees = () => {
       }
     
     }
-    return ( <Table striped bordered hover>
+    return (
+      <div className="m-5">
+      <Table striped bordered hover>
                     <thead>
                         <tr>
                         <th>tnl_id</th>
@@ -52,5 +54,6 @@ export const Employees = () => {
                        })}
                     </tbody>
                 </Table>
+                </div>
     )
 }
