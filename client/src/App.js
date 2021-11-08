@@ -1,5 +1,6 @@
 
-import { Container } from 'react-bootstrap';
+
+
 import NavBar from './components/NavBar.js';
 import Router from './Router.js';
 
@@ -8,9 +9,9 @@ function App() {
     
    <>
       <NavBar/>
-      <Container>
+     
      <Router/>
-     </Container>
+     
     </>
   );
 }

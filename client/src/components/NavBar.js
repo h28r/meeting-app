@@ -1,5 +1,6 @@
 
 import{ Navbar,Nav,Container} from "react-bootstrap";
+import {Link} from 'react-router-dom'
 const NavBar = () =>{
 
 return (
@@ -8,8 +9,10 @@ return (
     <Container>
     <Navbar.Brand href="1 TO 1">One To One</Navbar.Brand>
     <Nav className="me-auto">
-    <Nav.Link href="#home">Employees</Nav.Link>
-      <Nav.Link href="#home">Meeting</Nav.Link>
+
+  <Link to="./home">   Employees</Link>
+   <Link to="./meeting">  Meeting</Link>
+
       <Nav.Link href="#features">feedback</Nav.Link>
       <Nav.Link href="#pricing">Action item</Nav.Link>
     </Nav>

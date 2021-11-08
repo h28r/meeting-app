@@ -1,18 +1,21 @@
 
+import {BrowserRouter , Switch, Route } from "react-router-dom";
 
 import { Employees } from "./Pages/Employees"
 import Meetings from "./Pages/Meetings"
 
 
+
 const Router = ()=>{
     return (
         <>
-        <Router>
+        <BrowserRouter>
+            <Switch>
 
-        <Employees/>
-        <Meetings/>
-       
-        </Router>
+                 <Route path ="/home" component={Employees}/ > 
+                 <Route path ="/meeting" component={Meetings}/ > 
+            </Switch>
+        </BrowserRouter>
         </>
     )
 }
