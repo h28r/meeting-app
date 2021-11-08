@@ -1,8 +1,11 @@
 import axios from "axios";
+import _default from "dom-helpers/esm/canUseDOM";
 import { useState , useEffect} from "react";
 import { Container, Table } from "react-bootstrap";
 
-function ActionItems() {
+import NavBar from '../components/NavBar';
+
+ const ActionItems=() =>{
     const  [actionItems, setActionItems] = useState([])
 
     useEffect(() => {
@@ -18,6 +21,8 @@ function ActionItems() {
         }
     }
     return (
+        <>
+        <NavBar/>
     <Container>
     <Table>
         <thead>
@@ -44,6 +49,6 @@ function ActionItems() {
         })}
         </tbody>
     </Table>
-    </Container> )
+    </Container> </>)
 }
 export default ActionItems
