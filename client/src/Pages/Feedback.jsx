@@ -2,8 +2,10 @@ import {  Table } from "react-bootstrap";
 import axios from 'axios';
 import { useState, useEffect } from "react";
 
+import NavBar from "../components/NavBar";
 
-export const Feedback = () => {
+
+ const FeedBack = () => {
     
     const [feedback, setfeedback] = useState([])
 
@@ -21,6 +23,8 @@ export const Feedback = () => {
     
     }
     return (
+      <>
+      <NavBar/>
       <div className="m-5">
       <Table striped bordered hover>
                     <thead>
@@ -47,5 +51,7 @@ export const Feedback = () => {
                     </tbody>
                 </Table>
                 </div>
+                </>
     )
 }
+export default FeedBack

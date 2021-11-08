@@ -2,6 +2,7 @@ import {  Table } from "react-bootstrap";
 import axios from 'axios';
 import { useState, useEffect } from "react";
 
+import NavBar from '../components/NavBar';
 
 export const Employees = () => {
     
@@ -20,6 +21,8 @@ export const Employees = () => {
     
     }
     return (
+      <>
+      <NavBar/>
       <div className="m-5">
       <Table striped bordered hover>
                     <thead>
@@ -54,5 +57,6 @@ export const Employees = () => {
                     </tbody>
                 </Table>
                 </div>
+                </>
     )
 }

@@ -3,7 +3,7 @@ import { useState ,useEffect} from 'react';
 import axios from 'axios';
 import {  Table } from "react-bootstrap";
 
-
+import NavBar from '../components/NavBar';
 
 const Meetings = () =>{
 
@@ -25,7 +25,10 @@ const Meetings = () =>{
 
 
     return (
+        <>
+        <NavBar/>
         <div className="m-5">
+           
         <Table striped bordered hover>
                       <thead>
                           <tr>
@@ -59,7 +62,7 @@ const Meetings = () =>{
                       </tbody> 
                   </Table>
                   </div>
-     
+     </>
     );
 }
 export default Meetings;
