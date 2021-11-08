@@ -1,16 +1,22 @@
-import ActionItems from "./Pages/ActionItems"
+
+import {BrowserRouter , Switch, Route } from "react-router-dom";
+
 import { Employees } from "./Pages/Employees"
-import { Feedback } from "./Pages/Feedback"
+import Meetings from "./Pages/Meetings"
 
 
 
 const Router = ()=>{
     return (
         <>
-        <Employees/>
-        <ActionItems/>
-        <Feedback/>
-      </>
+        <BrowserRouter>
+            <Switch>
+
+                 <Route path ="/home" component={Employees}/ > 
+                 <Route path ="/meeting" component={Meetings}/ > 
+            </Switch>
+        </BrowserRouter>
+        </>
     )
 }
 export default Router
